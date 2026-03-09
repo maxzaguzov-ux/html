@@ -1,0 +1,6 @@
+.about {
+    padding: rem(160) 0 rem(120);
+    &__text p:first-of-type {
+        padding: rem(60) 0 rem(30);
+    }
+}

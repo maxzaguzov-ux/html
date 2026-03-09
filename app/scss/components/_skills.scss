@@ -1,0 +1,52 @@
+.skills {
+    padding: rem(140) 0;
+    background-color: #f6f6f8;
+
+    &__box {
+        padding-top: rem(60);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__portrait {
+        width: rem(415);
+        height: rem(450);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: rem(664);
+        width: 100%;
+        gap: rem(86);
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__name {
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        width: rem(65);
+    }
+
+    &__line {
+        height: rem(32);
+        background-color: #dbdbed;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &__progress {
+        display: block;
+        background-color: #2352de;
+        height: 100%;
+    }
+}

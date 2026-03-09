@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a class="header__logo" href="#hero">
+                    <img src="images/logo.svg" alt="лого">
+                </a>
+                <button class="header__burger" type="button"></button>
+                <ul class="header__menu menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">Обо мне</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#skills">Навыки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#services">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#portfolio">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#testimonials">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="hero" style="background-image: url('images/hero/background.jpg');">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">
+                        Привет, я Иван Иванов<br><span class="hero__subtitle">
+                            frontend-<br>разработчик</span>
+                    </h1>
+                    <a class="hero__link" href="#">смотреть работы</a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="title">Обо мне</h2>
+                <div class="about__text">
+                    <p>Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь фронтенд-разработкой
+                        более года. До разработки занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за
+                        что взяться, чтобы дело приносило удовольствие и деньги, пока не наткнулся на один интересный
+                        курс.</p>
+                    <p>С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то
+                        сложнее. Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже через
+                        несколько месяцев принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и
+                        примерами работ можно ознакомиться ниже.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="skills__title title">Навыки</h2>
+                <div class="skills__box">
+                    <img class="skills__portrait" src="images/skills/portrait.jpg" alt="портрет">
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <span class="skills__name">
+                                html
+                            </span>
+                            <div class="skills__line">
+                                <span class="skills__progress" style="width: 85%;"></span>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <span class="skills__name">
+                                css
+                            </span>
+                            <div class="skills__line">
+                                <span class="skills__progress" style="width: 80%;"></span>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <span class="skills__name">
+                                js
+                            </span>
+                            <div class="skills__line">
+                                <span class="skills__progress" style="width: 61%;"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="title">Услуги</h2>
+                <ul class="services__list">
+                    <li class="services__item">
+                        <div class="services__icon services__icon--code"></div>
+                        <h3 class="services__title">Верстка проектов</h3>
+                        <div class="services__text">Сделаю качественную вёрстку вашего проекта по предоставленному
+                            макету
+                            или примеру</div>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__icon services__icon--dev"></div>
+                        <h3 class="services__title">Посадка на CMS</h3>
+                        <div class="services__text">Интегрирую ваш проект в одну из популярных CMS</div>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__icon services__icon--chat"></div>
+                        <h3 class="services__title">Поддержка сайта</h3>
+                        <div class="services__text">Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача
+                            проекта</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="portfolio__title title">Мои работы</h2>
+                <ul class="portfolio__filters">
+                    <li class="portfolio__filter-item">
+                        <button class="portfolio__filter-btn portfolio__filter-btn--active" type="button">Все
+                            работы</button>
+                    </li>
+                    <li class="portfolio__filter-item">
+                        <button class="portfolio__filter-btn" type="button">Лендинги</button>
+                    </li>
+                    <li class="portfolio__filter-item">
+                        <button class="portfolio__filter-btn" type="button">Корпоративные</button>
+                    </li>
+                    <li class="portfolio__filter-item">
+                        <button class="portfolio__filter-btn" type="button">E-commerce</button>
+                    </li>
+                </ul>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item" data-category="landing">
+                        <img class="portfolio__img" src="images/portfoio/img1.jpg" alt="река">
+                    </li>
+                    <li class="portfolio__item" data-category="corporate">
+                        <img class="portfolio__img" src="images/portfoio/img2.jpg" alt="баржи">
+                    </li>
+                    <li class="portfolio__item" data-category="ecommerce">
+                        <img class="portfolio__img" src="images/portfoio/img3.png" alt="мост">
+                    </li>
+                    <li class="portfolio__item" data-category="landing">
+                        <img class="portfolio__img" src="images/portfoio/img4.jpg" alt="город">
+                    </li>
+                    <li class="portfolio__item" data-category="corporate">
+                        <img class="portfolio__img" src="images/portfoio/img5.jpg" alt="берег">
+                    </li>
+                    <li class="portfolio__item" data-category="ecommerce">
+                        <img class="portfolio__img" src="images/portfoio/img6.jpg" alt="скала">
+                    </li>
+                </ul>
+                <button class="portfolio__load-more" type="button">Загрузить еще</button>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="testimonials__title title">Отзывы клиетов</h2>
+                <div class="testimonials__inner">
+                    <div class="testimonials__card">
+                        <img class="testimonials__photo" src="images/testimonials/mark.jpg" alt="Марк Цукерберг">
+                        <blockquote class="testimonials__quote">
+                            <cite class="testimonials__author">Марк Цукерберг</cite>
+                            <p>Фантастика! Я всецело доволен работой этого специалиста. Быстро и качественно.
+                                Рекомендую!</p>
+                        </blockquote>
+                    </div>
+                    <a class="testimonials__video" href="https://www.youtube.com/watch?v=mHQAZB2Wf_c" data-fancybox>
+                        <svg width="86" height="100" viewBox="0 0 86 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0L85.7143 50L0 100V0Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+            <div class="container">
+                <ul class="stats__list">
+                    <li class="stats__item">
+                        <div class="stats__icon stats__icon--case"></div>
+                        <span class="stats__label">Выполненных работ</span>
+                        <span class="stats__value">56</span>
+                    </li>
+                    <li class="stats__item">
+                        <div class="stats__icon stats__icon--clients"></div>
+                        <span class="stats__label">Довольных клиентов</span>
+                        <span class="stats__value">23</span>
+                    </li>
+                    <li class="stats__item">
+                        <div class="stats__icon stats__icon--coffee"></div>
+                        <span class="stats__label">Выпито чашек кофе</span>
+                        <span class="stats__value">477</span>
+                    </li>
+                    <li class="stats__item">
+                        <div class="stats__icon stats__icon--review"></div>
+                        <span class="stats__label">Всего отзывов</span>
+                        <span class="stats__value">48</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="title">Контакты</h2>
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <div class="contacts__text">
+                            <p>Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру
+                                телефона, email, в соцсетях:</p>
+                        </div>
+                        <a class="contacts__tel" href="tel:+79622333353">+7 (962) 233 33 53</a>
+                        <a class="contacts__email" href="mailto:maxzaguzov@gmail.com">maxzaguzov@gmail.com</a>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a class="contacts__link contacts__link--instagram" href="#"></a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link contacts__link--facebook" href="#"></a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link contacts__link--telegram" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__form">
+                        <form class="contacts__form-inner" action="#" method="post">
+                            <div class="contacts__form-row">
+                                <div class="contacts___form-group">
+                                    <label class="contacts__form-label" for="name">Ваше имя</label>
+                                    <input class="contacts__form-input contacts__form-name" id="name" type="text"
+                                        name="user-name" placeholder="Иван" required>
+                                </div>
+                                <div class="contacts__form-group">
+                                    <label class="contacts__form-label" for="tel">Номер телефона</label>
+                                    <input class="contacts__form-input coontacts__form-tel" id="tel" type="text"
+                                        name="user-name" placeholder="+79012345678" required>
+                                </div>
+                            </div>
+                            <div class="contacts__form-group contacts__form--full-width">
+                                <label class="contacts__form-label" for="msg">Ваше сообщение</label>
+                                <textarea class="contacts__form-input contacts__form-msg" name="msg" id="msg"
+                                    placeholder="Текст вашего сообщения"></textarea>
+                            </div>
+                            <div class="contacts__form-action">
+                                <button class="contacts__form-btn" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="footer__logo" href="#hero-section">
+            <img src="img/logo.svg" alt="Логотип" />
+        </a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

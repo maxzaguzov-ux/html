@@ -1,0 +1,55 @@
+.contacts {
+    padding-bottom: rem(140);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: rem(531);
+    }
+
+    &__text {
+        font-size: rem(16);
+    }
+
+    &__tel {
+        padding: rem(30) 0 rem(15);
+    }
+    &__email {
+        padding-bottom: rem(20);
+    }
+
+    &__tel,
+    &__email {
+        display: block;
+        line-height: 1.3;
+        text-decoration: underline;
+        text-decoration-color: inherit;
+        color: #2352de;
+    }
+
+    &__list {
+        display: flex;
+        gap: rem(20);
+    }
+
+    &__link {
+        display: block;
+        width: rem(44);
+        height: rem(44);
+        @include backgroundProps(no-repeat, center center, cover);
+        &--instagram {
+            background-image: url('../images/contacts/instagram.svg');
+        }
+        &--facebook {
+            background-image: url('../images/contacts/facebook.svg');
+        }
+
+        &--telegram {
+            background-image: url('../images/contacts/telegram.svg');
+        }
+    }
+}
+

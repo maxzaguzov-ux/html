@@ -1,0 +1,4 @@
+function gulp-build { gulp build }
+function gulp-init { gulp init }
+function gulp-clean { gulp cleandist }
+Set-Alias g gulp

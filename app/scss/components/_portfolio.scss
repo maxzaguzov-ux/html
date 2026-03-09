@@ -1,0 +1,37 @@
+.portfolio {
+    padding-bottom: rem(140);
+
+    &__title {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
+    &__filters {
+        padding: rem(60) 0;
+        display: flex;
+        justify-content: center;
+        gap: rem(35);
+    }
+    &__filter-btn {
+        font-weight: 600;
+        font-size: rem(24);
+        &--active {
+            color: #2352de;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(45);
+        padding-bottom: rem(60);
+    }
+
+    &__load-more {
+        display: block;
+        padding: rem(12) rem(24);
+        background-color: #2352de;
+        color: #fff;
+        border: rem(1) solid transparent;
+        margin: 0 auto;
+    }
+}
