@@ -3,11 +3,13 @@
 
     &__inner {
         display: flex;
+        margin-top: rem(60);
         justify-content: space-between;
     }
 
     &__info {
-        width: rem(531);
+        flex: 1;
+        max-width: rem(531);
     }
 
     &__text {
@@ -17,6 +19,7 @@
     &__tel {
         padding: rem(30) 0 rem(15);
     }
+
     &__email {
         padding-bottom: rem(20);
     }
@@ -24,6 +27,7 @@
     &__tel,
     &__email {
         display: block;
+        width: fit-content;
         line-height: 1.3;
         text-decoration: underline;
         text-decoration-color: inherit;
@@ -40,9 +44,11 @@
         width: rem(44);
         height: rem(44);
         @include backgroundProps(no-repeat, center center, cover);
+
         &--instagram {
             background-image: url('../images/contacts/instagram.svg');
         }
+
         &--facebook {
             background-image: url('../images/contacts/facebook.svg');
         }
@@ -51,5 +57,57 @@
             background-image: url('../images/contacts/telegram.svg');
         }
     }
-}
 
+    &__form {
+        flex: 1;
+        max-width: rem(541);
+
+        &-row {
+            display: flex;
+            gap: rem(20);
+        }
+
+        &-group {
+            flex: 1;
+            margin-bottom: rem(30);
+        }
+
+        &-label {
+            display: block;
+            font-weight: 600;
+            font-size: rem(14);
+            line-height: 1.3;
+            margin-bottom: rem(10);
+        }
+
+        &-input {
+            width: 100%;
+            resize: none;
+            border: none;
+            background-color: #f6f6f8;
+
+            &::placeholder
+            {
+            padding: rem(13) 0 rem(13) rem(15);
+            font-size: rem(14);
+            line-height: 1.3;
+            color: #9c9cab;
+        }
+    }
+        &-name,
+        &-tel {
+            height: rem(44);
+        }
+
+        &-msg {
+            height: rem(115);
+        }
+
+        
+        &-btn {
+            padding: rem(12) rem(24);
+            background-color: #2352de;
+            color: #f6f6f8;
+        }
+    }
+}
